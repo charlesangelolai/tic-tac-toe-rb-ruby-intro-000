@@ -30,7 +30,7 @@ def move(array, index, value = "X")
   array[index] = value
 end
 
-# code your #valid_move? method here
+# Define #valid_move? method here
 def valid_move?(board, index)
   if position_taken?(board, index) == true
     false
