@@ -171,4 +171,5 @@ end
 def play(board)
   until won?(board)
     turn(board)
+  end
 end
