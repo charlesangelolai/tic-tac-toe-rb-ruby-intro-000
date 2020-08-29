@@ -169,5 +169,6 @@ end
 # A tic tac toe game must allow players to take turns, checking if the game is over after every turn, and at the conclusion of the game,
 # whether because it was won or because it was a draw, reporting to the user the outcome of the game.
 def play(board)
-
+  until won?(board)
+    turn(board)
 end
