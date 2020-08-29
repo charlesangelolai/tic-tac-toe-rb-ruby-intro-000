@@ -74,3 +74,12 @@ def turn_count(board)
 
   return count
 end
+
+# define a method current_player that takes the board array as an argument and utilizes the method turn_count to determine who's turn it is
+def current_player(board)
+  if turn_count(board) % 2 == 0
+    return "X"
+  else
+    return "O"
+  end
+end
