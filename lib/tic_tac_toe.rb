@@ -26,7 +26,7 @@ def input_to_index(user_input)
 end
 
 # Define move method that takes three arguments (board array, index, value "default = X")
-def move(array, index, value = "X")
+def move(array, index, value)
   array[index] = value
 end
 
