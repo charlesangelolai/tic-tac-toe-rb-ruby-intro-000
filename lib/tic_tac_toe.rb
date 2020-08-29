@@ -20,7 +20,32 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-#define input_to_index method that accepts user input
+# Define input_to_index method that accepts user input
 def input_to_index(user_input)
   return user_input.to_i - 1
+end
+
+# Define move method that takes three arguments (board array, index, value "default = X")
+def move(array, index, value = "X")
+  array[index] = value
+end
+
+# code your #valid_move? method here
+def valid_move?(board, index)
+  if position_taken?(board, index) == true
+    false
+  elsif index <= 8 && index >= 0
+    true
+  end
+end
+
+# Define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+def position_taken?(board, index)
+  if board[index] == " " || board[index] == ""
+    false
+  elsif board[index] == nil
+    false
+  elsif board[index] == "X" || board[index] == "O"
+    true
+  end
 end
