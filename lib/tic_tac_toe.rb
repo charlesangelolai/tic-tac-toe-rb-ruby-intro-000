@@ -62,3 +62,13 @@ def turn(board)
     turn(board)
   end
 end
+
+# Define turn_count method which accepts a board array and returns how many moves have meen played
+def turn_count(board)
+  count = 0
+  board.each do |value|
+    count += 1
+  end
+
+  return count
+end
