@@ -50,7 +50,7 @@ def position_taken?(board, index)
   end
 end
 
-# Define turn method
+# Define turn method which accepts an array as an argument
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
